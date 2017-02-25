@@ -1,0 +1,26 @@
+{
+  "name": "ets",
+  "version": "1.0.0",
+  "description": "Electronic Timekeeping System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MastaWu/ETS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MastaWu/ETS/issues"
+  },
+  "homepage": "https://github.com/MastaWu/ETS#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "morgan": "^1.8.1",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0"
+  }
+}
