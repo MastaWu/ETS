@@ -2,11 +2,12 @@
 module.exports = function getTime(req, res) {
     var database = require('../../database/database');
     var queryValues = [];
-    queryValues.push(req.body.user_id);
-    queryValues.push(req.body.date);
+    queryValues.push(req.body.ets.userId);
+    queryValues.push(req.body.ets.startDate);
+    queryValues.push(req.body.ets.endDate);
 
     var getAllTimesQuery = {
-        sql: "SELECT * FROM timecharge where user_id = ?;"
+        sql: "SELECT * FROM timecharge where timecharge_date between ? and ?;"
     };
 
     database.query(getAllTimesQuery, function(results) {
